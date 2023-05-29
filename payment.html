@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libera</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: aqua;
+    }
+    .container{
+        margin: 80px 0px 100px 50px;
+        margin-right: 25px;
+        border: 2px solid black;
+        border-radius: 25px;
+        background-color: white;
+    }
+    #box{
+        display: flexbox;
+        float: left;
+        width: 600px;
+        height: 400px;
+        padding: 12px;
+    }
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    form{
+        margin-top: 50px;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    form input, select{
+        margin: 10px;
+        padding: 5px;
+    }
+    .box3{
+        margin-left: 375px;
+    }
+    .btn{
+        background-color: greenyellow;
+        width: 50%;
+        height: 50px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    .btn a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    .btn:hover{
+        background-color: skyblue;
+    }
+    .btn:active{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1" id="box">
+            <h2>Billing Address</h2>
+            <form action="">
+                Full Name: <br>
+                <input type="text" placeholder="Enter your name"> <br>
+                Email: <br>
+                <input type="email" name="Email" placeholder="abcd@gmail.com"> <br>
+                City: <br>
+                <select name="city">
+                    <option value="">Select the options</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Patiala">Patiala</option>
+                    <option value="Ambala">Ambala</option>
+                    <option value="Ludhiana">Ludhiana</option>
+                </select> <br>
+                <label for="">
+                    State: <br>
+                    <input type="text" name="State" placeholder="Punjab">
+                </label>
+                <label for="">
+                    Pin-code:
+                    <input type="number" name="pin-code">
+                </label>
+
+            </form>
+        </div>
+        <div class="box2" id="box">
+            <h2>PAYMENT</h2>
+            <form action="">
+                Accepted Cards: <br>
+                <label for=""><img src="https://refersionwp.wpengine.com/wp-content/uploads/2022/03/Paypal-image.png" width="60px" height="30px"></label>
+                <label for=""><img src="https://entrackr.com/storage/2019/04/Mastercard-1200x600.jpg" width="60px" height="30px"></label>
+                <label for=""><img src="https://www.investopedia.com/thmb/3H96L9iC_VUhvsqmnypxfEQW4UA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/full-color-800x450-cee226a48bed4177b90351075b332227.jpg" width="50px" height="30px"></label><br>
+
+                Name On Card: <br>
+                <input type="text" name="name" placeholder="Enter your name"><br>
+
+                Credit Card Number: <br>
+                <input type="number" placeholder="1111-2222-3333-4444"> <br>
+
+                Exp Month: <br>
+                <input type="month"> <br>
+
+                <label for="">
+                    Expiry Year:
+                    <input type="year">
+                </label>
+                <label for="">
+                    CVV:
+                    <input type="password" placeholder="***">
+                </label>
+
+
+            </form>
+        </div>
+        <div class="box3">
+            <button class="btn"><a href="Libera.html"> Proceed to Pay</a></button>
+        </div>
+    </div>
+</body>
+</html>
